@@ -1,0 +1,7 @@
+port: 8080
+dburl: postgres://db-user:db-password@petstore-db:5432/petstore?sslmode=disable-from-yaml
+jaegerurl: http://jaeger:16686-from-yaml
+sentryurl: http://sentry:9000-from-yaml
+kafkabroker: kafka:9092-from-yaml
+someappid: testid-from-yaml
+someappkey: testkey-from-yaml
