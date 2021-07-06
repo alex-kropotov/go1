@@ -3,7 +3,6 @@ package config
 import (
 	"github.com/joho/godotenv"
 	"gopkg.in/yaml.v2"
-	"io/ioutil"
 	"log"
 	"os"
 )
@@ -44,7 +43,7 @@ func GetConfigFromDotEnv() *Config {
 }
 
 func GetConfigFromYaml() *Config {
-	content, err := ioutil.ReadFile("conf.yaml")
+	content, err := os.ReadFile("../conf.yaml")
 	if err != nil {
 		log.Fatal(err)
 	}
